@@ -19,8 +19,10 @@ The following links are now used to run the http server
 ### Step 3
 Add Model for user authorization
 * `npm i -D mongoose`
-* `npm i -D express`
+* `npm i express`
 * `npm i -D nodemon`
 fill in "models", "routes" and "controllers" folders
   
 ### Step 4: Handle incorrect routes and CORS
+To see heroku logs use
+`heroku logs --tail`

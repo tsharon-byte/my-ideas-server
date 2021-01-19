@@ -15,3 +15,10 @@ Create just simple http server and deployed to heroku
 The following links are now used to run the http server
 * [locally](http://localhost:3000)
 * [heroku](https://my-ideas-server.herokuapp.com/)
+
+### Step 3
+Add Model for user authorization
+* `npm i -D mongoose`
+* `npm i -D express`
+* `npm i -D nodemon`
+fill in "models", "routes" and "controllers" folders

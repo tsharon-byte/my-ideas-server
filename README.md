@@ -22,3 +22,5 @@ Add Model for user authorization
 * `npm i -D express`
 * `npm i -D nodemon`
 fill in "models", "routes" and "controllers" folders
+  
+### Step 4: Handle incorrect routes and CORS

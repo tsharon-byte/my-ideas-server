@@ -11,3 +11,7 @@
 Create just simple http server and deployed to heroku
 * `heroku create my-ideas-server`
 * `git push heroku`
+
+The following links are now used to run the http server
+* [locally](http://localhost:3000)
+* [heroku](https://my-ideas-server.herokuapp.com/)

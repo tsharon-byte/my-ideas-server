@@ -2,6 +2,25 @@ const express = require("express");
 const register = require("./api/routes/register");
 const login = require("./api/routes/login");
 const app = express();
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const MONGO_ATLAS_PWD = "ZNYPlWYGhWcxIuYm";
+const DB_NAME = "my_ideas";
+const url =
+  "mongodb+srv://deno_survey:" +
+  MONGO_ATLAS_PWD +
+  "@cluster0.vj1zo.mongodb.net/" +
+  DB_NAME +
+  "?retryWrites=true&w=majority";
+// const url =
+//   "mongodb+srv://deno_survey:" +
+//   process.env.MONGO_ATLAS_PWD +
+//   "@cluster0.mgtmw.mongodb.net/" +
+//   process.env.DB_NAME +
+//   "?retryWrites=true&w=majority";
+console.log(url);
+mongoose.connect(url);
+app.use(bodyParser.json());
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   if (req.method === "OPTIONS") {
